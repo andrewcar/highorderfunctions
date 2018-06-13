@@ -5,7 +5,7 @@ import Foundation
 ///////////SORT/////////
 ////////////////////////
 
-// SPLIT ARRAYS
+// SPLIT ARRAY
 
 func mergeSort(array: [Int]) -> [Int] {
     
@@ -17,7 +17,7 @@ func mergeSort(array: [Int]) -> [Int] {
     return merge(left: mergeSort(array: leftArray), right: mergeSort(array: rightArray))
 }
 
-// MERGE
+// MERGE ARRAYS
 
 func merge(left: [Int], right: [Int]) -> [Int] {
     
@@ -33,19 +33,20 @@ func merge(left: [Int], right: [Int]) -> [Int] {
             mergedArray.append(right.removeFirst())
         }
     }
-    
     return mergedArray + left + right
 }
 
 // TEST
 
 var randomInts: [Int] = []
-
 for _ in 0..<50 {
     let randomInt = Int(arc4random_uniform(UInt32(1000)))
     randomInts.append(randomInt)
 }
 
+print(randomInts)
+print()
+print(mergeSort(array: randomInts))
 
 
 
