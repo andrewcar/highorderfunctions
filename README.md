@@ -11,3 +11,6 @@
 
 ## Binary Search
 ###### A Boolean function that tells you if an Int can be found in an array.
+
+## Two Sum Problem
+###### A brute force solution to finding out whether there are two items in an array that add up to a provided sum.
