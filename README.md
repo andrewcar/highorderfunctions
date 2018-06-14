@@ -5,3 +5,6 @@
 
 ## Most-Common-Element
 ###### Find the most common element(s) in an array and return it.
+
+## Find-Missing-Element
+###### Was asked to solve this for a Fortune 500 company. Here is the solution using Most-Common-Element.
