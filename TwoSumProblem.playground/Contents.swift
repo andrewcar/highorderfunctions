@@ -76,6 +76,31 @@ func twoSumBinarySearch(array: [Int], sum: Int) -> Bool {
 
 twoSumBinarySearch(array: numbers, sum: 15)
 
+// 3. Move pointer from either end (linear)
+
+func twoSumPointers(array: [Int], sum: Int) -> Bool {
+    
+    if array.count == 0 { return false }
+    
+    var lowIndex = 0
+    var highIndex = array.count - 1
+    
+    while lowIndex < highIndex {
+        let sumOfItems = array[lowIndex] + array[highIndex]
+        
+        if sumOfItems == sum {
+            return true
+        } else if sumOfItems < sum {
+            lowIndex += 1
+        } else if sumOfItems > sum {
+            lowIndex -= 1
+        }
+    }
+    return false
+}
+
+twoSumPointers(array: numbers, sum: 15)
+
 
 
 
