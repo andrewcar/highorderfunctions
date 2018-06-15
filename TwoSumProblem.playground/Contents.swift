@@ -93,7 +93,7 @@ func twoSumPointers(array: [Int], sum: Int) -> Bool {
         } else if sumOfItems < sum {
             lowIndex += 1
         } else if sumOfItems > sum {
-            lowIndex -= 1
+            highIndex -= 1
         }
     }
     return false
